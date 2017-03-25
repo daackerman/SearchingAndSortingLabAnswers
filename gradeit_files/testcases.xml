@@ -1,0 +1,66 @@
+<assignment>
+    <testcases>
+        <testcase name="ArrayUtils Integer Array Tests">
+            <compile type="Java" filename="ArrayUtils.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore IntArrayTests" output="IntArrayTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/IntArrayTests_expected_output.txt" actual="IntArrayTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="ArrayUtils String List Tests">
+            <compile type="Java" filename="ArrayUtils.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore StringListTests" output="StringListTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/StringListTests_expected_output.txt" actual="StringListTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="Integer Sequential Searcher Tests">
+            <compile type="Java" filename="Searcher.java"/>
+            <compile type="Java" filename="IntSequentialSearcher.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore IntSequentialSearcherTests" output="IntSequentialSearcherTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/IntSequentialSearcherTests_expected_output.txt" actual="IntSequentialSearcherTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="Integer Binary Searcher Tests">
+            <compile type="Java" filename="IntBinarySearcher.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore IntBinarySearcherTests" output="IntBinarySearcherTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/IntBinarySearcherTests_expected_output.txt" actual="IntBinarySearcherTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="String Sequential Searcher Tests">
+            <compile type="Java" filename="StringSequentialSearcher.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore StringSequentialSearcherTests" output="StringSequentialSearcherTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/StringSequentialSearcherTests_expected_output.txt" actual="StringSequentialSearcherTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="String Binary Searcher Tests">
+            <compile type="Java" filename="StringBinarySearcher.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore StringBinarySearcherTests" output="StringBinarySearcherTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/StringBinarySearcherTests_expected_output.txt" actual="StringBinarySearcherTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="Integer Bubble SorterTests">
+            <compile type="Java" filename="Sorter.java"/>
+            <compile type="Java" filename="IntBubbleSorter.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore IntBubbleSorterTests" output="IntBubbleSorterTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/IntBubbleSorterTests_expected_output.txt" actual="IntBubbleSorterTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="Integer Insertion SorterTests">
+            <compile type="Java" filename="IntInsertionSorter.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore IntInsertionSorterTests" output="IntInsertionSorterTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/IntInsertionSorterTests_expected_output.txt" actual="IntInsertionSorterTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="Integer Selection SorterTests">
+            <compile type="Java" filename="IntSelectionSorter.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore IntSelectionSorterTests" output="IntSelectionSorterTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/IntSelectionSorterTests_expected_output.txt" actual="IntSelectionSorterTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="String Bubble SorterTests">
+            <compile type="Java" filename="StringBubbleSorter.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore StringBubbleSorterTests" output="StringBubbleSorterTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/StringBubbleSorterTests_expected_output.txt" actual="StringBubbleSorterTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="String Insertion SorterTests">
+            <compile type="Java" filename="StringInsertionSorter.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore StringInsertionSorterTests" output="StringInsertionSorterTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/StringInsertionSorterTests_expected_output.txt" actual="StringInsertionSorterTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+        <testcase name="String Selection SorterTests">
+            <compile type="Java" filename="StringSelectionSorter.java"/>
+            <run type="Java" filename="org.junit.runner.JUnitCore StringSelectionSorterTests" output="StringSelectionSorterTests_output.txt" timeout="10000"/>
+            <diff type="text" expected="test/expected_output/StringSelectionSorterTests_expected_output.txt" actual="StringSelectionSorterTests_output.txt" ignore="numbers" strip="junit"/>
+        </testcase>
+    </testcases>
+</assignment>

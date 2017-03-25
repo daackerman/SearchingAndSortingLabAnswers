@@ -1,0 +1,212 @@
+<criteria course="APCS" assignment="Search and Sort Lab">
+    <student/>
+    <grader/>
+    <category name="ArrayUtils">
+        <category name="Integer Arrays">
+            <category name="swap">
+                <item id="100" max="1" cases="testIASwapSimple">two elements small list</item>
+                <item id="103" max="1" cases="testIASwapItself">itself small list</item>
+                <item id="104" max="1" cases="testIASwapFarther">two elements close larger list</item>
+                <item id="106" max="1" cases="testIASwapFirstAndLast">two elements far larger list</item>
+                <item id="101" max="1" cases="testIASwapInvalidEmpty">throws exception on empty list</item>
+                <item id="102" max="1" cases="testIASwapInvalidLarge">throws exception for too large indexes</item>
+                <item id="105" max="1" cases="testIASwapInvalidNegative">throws exception for too small indexes</item>
+            </category>
+            <category name="isSorted">
+                <item id="112" max="1" cases="testIAIsSortedEmpty">empty list</item>
+                <item id="111" max="1" cases="testIAIsSortedOne">singleton list</item>
+                <item id="108" max="1" cases="testIAIsSortedTwoTrue">sorted list of two</item>
+                <item id="113" max="1" cases="testIAIsSortedTwoFalse">unsorted list of two</item>
+                <item id="110" max="1" cases="testIAIsSortedManyTrue">sorted list of many</item>
+                <item id="107" max="1" cases="testIAIsSortedReverseFalse">reverse sorted list of many</item>
+                <item id="109" max="1" cases="testIAIsSortedManyAlmostTrue">almost sorted list of many</item>
+            </category>
+        </category>
+        <category name="String Lists">
+            <category name="swap">
+                <item id="126" max="1" cases="testSLSwapSimple">two elements small list</item>
+                <item id="122" max="1" cases="testSLSwapItself">itself small list</item>
+                <item id="121" max="1" cases="testSLSwapFarther">two elements close larger list</item>
+                <item id="123" max="1" cases="testSLSwapFirstAndLast">two elements far larger list</item>
+                <item id="124" max="1" cases="testSLSwapInvalidEmpty">throws exception on empty list</item>
+                <item id="125" max="1" cases="testSLSwapInvalidLarge">throws exception for too large indexes</item>
+                <item id="120" max="1" cases="testSLSwapInvalidNegative">throws exception for too small indexes</item>
+            </category>
+            <category name="isSorted">
+                <item id="127" max="1" cases="testSLIsSortedEmpty">empty list</item>
+                <item id="132" max="1" cases="testSLIsSortedOne">singleton list</item>
+                <item id="131" max="1" cases="testSLIsSortedTwoTrue">sorted list of two</item>
+                <item id="129" max="1" cases="testSLIsSortedTwoFalse">unsorted list of two</item>
+                <item id="130" max="1" cases="testSLIsSortedManyTrue">sorted list of many</item>
+                <item id="133" max="1" cases="testSLIsSortedReverseFalse">reverse sorted list of many</item>
+                <item id="128" max="1" cases="testSLIsSortedAlmostTrue">almost sorted list of many</item>
+            </category>
+        </category>
+    </category>
+    <category name="Searchers">
+        <category name="IntegerSequentialSearcher">
+            <category name="indexOf">
+                <item id="227" max="1" cases="testIndexOfISSEmpty">empty array returns -1</item>
+                <item id="235" max="1" cases="testIndexOfISSOneFound">singleton array returns 0 if there</item>
+                <item id="234" max="1" cases="testIndexOfISSOneNotFound">singleton array returns -1 if not there</item>
+                <item id="231" max="1" cases="testIndexOfISSTwoFound">array of two elements can return second index</item>
+                <item id="232" max="1" cases="testIndexOfISSTwoNotFound">array of two elements returns -1 if not there</item>
+                <item id="229" max="1" cases="testIndexOfISSManyFoundBeginning">array of many elements returns 0 for first item</item>
+                <item id="230" max="1" cases="testIndexOfISSManyFoundMiddle">array of many elements returns middle for middle item</item>
+                <item id="228" max="1" cases="testIndexOfISSManyFoundEnd">array of many elements returns last index for last item</item>
+                <item id="233" max="1" cases="testIndexOfISSManyFoundAll">array of many elements returns each index for each item</item>
+                <item id="236" max="1" cases="testIndexOfISSManyNotFound">array of many elements returns -1 if not there</item>
+            </category>
+            <category name="contains">
+                <item id="225" max="1" cases="testContainsISSEmptyFalse">empty array returns false</item>
+                <item id="223" max="1" cases="testContainsISSBeginning">returns true for first item</item>
+                <item id="226" max="1" cases="testContainsISSMiddle">returns true for middle item</item>
+                <item id="222" max="1" cases="testContainsISSEnd">returns true for last item</item>
+                <item id="221" max="1" cases="testContainsISSFalse">returns false for item not in list</item>
+                <item id="224" max="1" cases="testContainsISSManyTrue">returns true for many items in a list</item>
+                <item id="220" max="1" cases="testContainsISSManyFalse">returns false for many items not in a list</item>
+            </category>
+        </category>
+        <category name="IntegerBinarySearcher">
+            <category name="indexOf">
+                <item id="213" max="1" cases="testIndexOfIBSEmpty">empty array returns -1</item>
+                <item id="214" max="1" cases="testIndexOfIBSOneFound">singleton array returns 0 if there</item>
+                <item id="212" max="1" cases="testIndexOfIBSOneNotFound">singleton array returns -1 if not there</item>
+                <item id="210" max="1" cases="testIndexOfIBSTwoFound">array of two elements can return second index</item>
+                <item id="211" max="1" cases="testIndexOfIBSTwoNotFound">array of two elements returns -1 if not there</item>
+                <item id="207" max="1" cases="testIndexOfIBSManyFoundBeginning">array of many elements returns 0 for first item</item>
+                <item id="208" max="1" cases="testIndexOfIBSManyFoundEnd">array of many elements returns last index for last item</item>
+                <item id="216" max="1" cases="testIndexOfIBSManyFoundMiddle">array of many elements returns middle for middle item</item>
+                <item id="215" max="1" cases="testIndexOfIBSManyFoundAll">array of many elements returns each index for each item</item>
+                <item id="209" max="1" cases="testIndexOfIBSManyNotFound">array of many elements returns -1 if not there</item>
+            </category>
+            <category name="contains">
+                <item id="206" max="1" cases="testContainsIBSEmptyFalse">empty array returns false</item>
+                <item id="203" max="1" cases="testContainsIBSBeginning">returns true for first item</item>
+                <item id="200" max="1" cases="testContainsIBSMiddle">returns true for middle item</item>
+                <item id="201" max="1" cases="testContainsIBSEnd">returns true for last item</item>
+                <item id="202" max="1" cases="testContainsIBSFalse">returns false for item not in list</item>
+                <item id="205" max="1" cases="testContainsIBSManyTrue">returns true for many items in a list</item>
+                <item id="204" max="1" cases="testContainsIBSManyFalse">returns false for many items not in a list</item>
+            </category>
+        </category>
+        <category name="StringSequentialSearcher">
+            <category name="indexOf">
+                <item id="247" max="1" cases="testIndexOfSSSEmpty">empty array returns -1</item>
+                <item id="255" max="1" cases="testIndexOfSSSOneFound">singleton array returns 0 if there</item>
+                <item id="254" max="1" cases="testIndexOfSSSOneNotFound">singleton array returns -1 if not there</item>
+                <item id="251" max="1" cases="testIndexOfSSSTwoFound">array of two elements can return second index</item>
+                <item id="252" max="1" cases="testIndexOfSSSTwoNotFound">array of two elements returns -1 if not there</item>
+                <item id="249" max="1" cases="testIndexOfSSSManyFoundBeginning">array of many elements returns 0 for first item</item>
+                <item id="250" max="1" cases="testIndexOfSSSManyFoundMiddle">array of many elements returns middle for middle item</item>
+                <item id="248" max="1" cases="testIndexOfSSSManyFoundEnd">array of many elements returns last index for last item</item>
+                <item id="253" max="1" cases="testIndexOfSSSManyFoundAll">array of many elements returns each index for each item</item>
+                <item id="256" max="1" cases="testIndexOfSSSManyNotFound">array of many elements returns -1 if not there</item>
+            </category>
+            <category name="contains">
+                <item id="245" max="1" cases="testContainsSSSEmptyFalse">empty array returns false</item>
+                <item id="243" max="1" cases="testContainsSSSBeginning">returns true for first item</item>
+                <item id="246" max="1" cases="testContainsSSSMiddle">returns true for middle item</item>
+                <item id="242" max="1" cases="testContainsSSSEnd">returns true for last item</item>
+                <item id="241" max="1" cases="testContainsSSSFalse">returns false for item not in list</item>
+                <item id="244" max="1" cases="testContainsSSSManyTrue">returns true for many items in a list</item>
+                <item id="240" max="1" cases="testContainsSSSManyFalse">returns false for many items not in a list</item>
+            </category>
+        </category>
+        <category name="StringBinarySearcher">
+            <category name="indexOf">
+                <item id="274" max="1" cases="testIndexOfSBSEmpty">empty list returns -1</item>
+                <item id="272" max="1" cases="testIndexOfSBSOneFound">singleton list returns 0 if there</item>
+                <item id="271" max="1" cases="testIndexOfSBSOneNotFound">singleton list returns -1 if not there</item>
+                <item id="275" max="1" cases="testIndexOfSBSTwoFound">list of two elements can return second index</item>
+                <item id="269" max="1" cases="testIndexOfSBSTwoNotFound">list of two elements returns -1 if not there</item>
+                <item id="267" max="1" cases="testIndexOfSBSManyFoundBeginning">list of many elements returns 0 for first item</item>
+                <item id="270" max="1" cases="testIndexOfSBSManyFoundMiddle">list of many elements returns middle for middle item</item>
+                <item id="268" max="1" cases="testIndexOfSBSManyFoundEnd">list of many elements returns last index for last item</item>
+                <item id="273" max="1" cases="testIndexOfSBSManyFoundAll">list of many elements returns each index for each item</item>
+                <item id="276" max="1" cases="testIndexOfSBSManyNotFound">list of many elements returns -1 if not there</item>
+            </category>
+            <category name="contains">
+                <item id="265" max="1" cases="testContainsSBSEmptyFalse">empty list returns false</item>
+                <item id="263" max="1" cases="testContainsSBSBeginning">returns true for first item</item>
+                <item id="260" max="1" cases="testContainsSBSMiddle">returns true for middle item</item>
+                <item id="261" max="1" cases="testContainsSBSEnd">returns true for last item</item>
+                <item id="262" max="1" cases="testContainsSBSFalse">returns false for item not in list</item>
+                <item id="266" max="1" cases="testContainsSBSManyTrue">returns true for many items in a list</item>
+                <item id="264" max="1" cases="testContainsSBSManyFalse">returns false for many items not in a list</item>
+            </category>
+        </category>
+    </category>
+    <category name="Sorters">
+        <category name="Integer Arrays">
+            <category name="BubbleSorter">
+                <item id="305" max="1" cases="testIntBubbleSorterEmpty">empty array</item>
+                <item id="303" max="1" cases="testIntBubbleSorterOne">singleton array</item>
+                <item id="301" max="1" cases="testIntBubbleSorterTwoSameSorted">array with 2 identical elements</item>
+                <item id="308" max="1" cases="testIntBubbleSorterTwoSorted">sorted array with 2 elements</item>
+                <item id="302" max="1" cases="testIntBubbleSorterTwoUnsorted">unsorted array with 2 elements</item>
+                <item id="307" max="1" cases="testIntBubbleSorterThreeSorted">sorted array with 3 elements</item>
+                <item id="306" max="1" cases="testIntBubbleSorterThreeReverseSorted">reverse sorted array with 3 elements</item>
+                <item id="300" max="1" cases="testIntBubbleSorterThreeRandom">unsorted array with 3 elements all permutations</item>
+                <item id="304" max="1" cases="testIntBubbleSorterYUGE">large random array</item>
+            </category>
+            <category name="InsertionSorter">
+                <item id="318" max="1" cases="testIntInsertionSorterEmpty">empty array</item>
+                <item id="314" max="1" cases="testIntInsertionSorterOne">singleton array</item>
+                <item id="317" max="1" cases="testIntInsertionSorterTwoSameSorted">array with 2 identical elements</item>
+                <item id="316" max="1" cases="testIntInsertionSorterTwoSorted">sorted array with 2 elements</item>
+                <item id="315" max="1" cases="testIntInsertionSorterTwoUnsorted">unsorted array with 2 elements</item>
+                <item id="312" max="1" cases="testIntInsertionSorterThreeSorted">sorted array with 3 elements</item>
+                <item id="310" max="1" cases="testIntInsertionSorterThreeReverseSorted">reverse sorted array with 3 elements</item>
+                <item id="313" max="1" cases="testIntInsertionSorterThreeRandom">unsorted array with 3 elements all permutations</item>
+                <item id="311" max="1" cases="testIntInsertionSorterYUGE">large random array</item>
+            </category>
+            <category name="SelectionSorter">
+                <item id="325" max="1" cases="testIntSelectionSorterEmpty">empty array</item>
+                <item id="327" max="1" cases="testIntSelectionSorterOne">singleton array</item>
+                <item id="322" max="1" cases="testIntSelectionSorterTwoSameSorted">array with 2 identical elements</item>
+                <item id="320" max="1" cases="testIntSelectionSorterTwoSorted">sorted array with 2 elements</item>
+                <item id="326" max="1" cases="testIntSelectionSorterTwoUnsorted">unsorted array with 2 elements</item>
+                <item id="323" max="1" cases="testIntSelectionSorterThreeSorted">sorted array with 3 elements</item>
+                <item id="324" max="1" cases="testIntSelectionSorterThreeReverseSorted">reverse sorted array with 3 elements</item>
+                <item id="321" max="1" cases="testIntSelectionSorterThreeRandom">unsorted array with 3 elements all permutations</item>
+                <item id="328" max="1" cases="testIntSelectionSorterYUGE">large random array</item>
+            </category>
+        </category>
+        <category name="String Lists">
+            <category name="BubbleSorter">
+                <item id="335" max="1" cases="testStringBubbleSorterEmpty">empty list</item>
+                <item id="330" max="1" cases="testStringBubbleSorterOne">singleton list</item>
+                <item id="336" max="1" cases="testStringBubbleSorterTwoSameSorted">list with 2 identical elements</item>
+                <item id="334" max="1" cases="testStringBubbleSorterTwoSorted">sorted list with 2 elements</item>
+                <item id="333" max="1" cases="testStringBubbleSorterTwoUnsorted">unsorted list with 2 elements</item>
+                <item id="337" max="1" cases="testStringBubbleSorterThreeSorted">sorted list with 3 elements</item>
+                <item id="338" max="1" cases="testStringBubbleSorterThreeReverseSorted">reverse sorted list with 3 elements</item>
+                <item id="332" max="1" cases="testStringBubbleSorterThreeRandom">unsorted list with 3 elements all permutations</item>
+                <item id="331" max="1" cases="testStringBubbleSorterYUGE">large random list</item>
+            </category>
+            <category name="InsertionSorter">
+                <item id="345" max="1" cases="testStringInsertionSorterEmpty">empty list</item>
+                <item id="342" max="1" cases="testStringInsertionSorterOne">singleton list</item>
+                <item id="344" max="1" cases="testStringInsertionSorterTwoSameSorted">list with 2 identical elements</item>
+                <item id="347" max="1" cases="testStringInsertionSorterTwoSorted">sorted list with 2 elements</item>
+                <item id="346" max="1" cases="testStringInsertionSorterTwoUnsorted">unsorted list with 2 elements</item>
+                <item id="341" max="1" cases="testStringInsertionSorterThreeSorted">sorted list with 3 elements</item>
+                <item id="343" max="1" cases="testStringInsertionSorterThreeReverseSorted">reverse sorted list with 3 elements</item>
+                <item id="348" max="1" cases="testStringInsertionSorterThreeRandom">unsorted list with 3 elements all permutations</item>
+                <item id="340" max="1" cases="testStringInsertionSorterYUGE">large random list</item>
+            </category>
+            <category name="SelectionSorter">
+                <item id="350" max="1" cases="testStringSelectionSorterEmpty">empty list</item>
+                <item id="351" max="1" cases="testStringSelectionSorterOne">singleton list</item>
+                <item id="352" max="1" cases="testStringSelectionSorterTwoSameSorted">list with 2 identical elements</item>
+                <item id="353" max="1" cases="testStringSelectionSorterTwoSorted">sorted list with 2 elements</item>
+                <item id="354" max="1" cases="testStringSelectionSorterTwoUnsorted">unsorted list with 2 elements</item>
+                <item id="355" max="1" cases="testStringSelectionSorterThreeSorted">sorted list with 3 elements</item>
+                <item id="356" max="1" cases="testStringSelectionSorterThreeReverseSorted">reverse sorted list with 3 elements</item>
+                <item id="357" max="1" cases="testStringSelectionSorterThreeRandom">unsorted list with 3 elements all permutations</item>
+                <item id="358" max="1" cases="testStringSelectionSorterYUGE">large random list</item>
+            </category>
+        </category>
+    </category>
+</criteria>
